@@ -1,0 +1,77 @@
+body {
+    background: url('img/stripes-light.png')
+}
+
+img#logo {
+    width: 100%;
+}
+
+div#left-column {
+    margin-top: 0;
+}
+
+div#right-column {
+    margin-top: 20px;
+}
+
+nav.navbar {
+    line-height: 20px;
+    font-size: 20px;
+    /* background-color: #800000; */
+    /* border-radius: 0; */
+    border-bottom: 1px solid #800000;
+    border-radius: 0
+}
+
+input.fancy {
+    border-radius: 0;
+    border: none;
+    border-bottom: 1px solid #eee;
+    background: none;
+    box-shadow: none;
+    margin-bottom: 20px
+}
+
+input.fancy:hover, input.fancy:focus {
+    box-shadow: none;
+    border-bottom: 1px solid #800000  
+}
+
+span#leave_time {
+    font-size: 6em;
+    color: #800000
+}
+
+span {
+    color: #800000;
+    font-weight: bold
+}
+
+p#caption {
+    font-size: 20px;
+}
+
+nav a {
+    margin: 0 auto;
+    /* color: white */
+}
+
+a {
+    color: #800000
+}
+
+li {
+    list-style: none;
+}
+
+button.btn {
+    background: none;
+    border: 2px solid black;
+    color: black
+}
+
+button.btn:hover {
+    background: #800000;
+    border: 2px solid #800000;
+    color: white
+}

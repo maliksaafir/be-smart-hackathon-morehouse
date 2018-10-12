@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+        <link rel="stylesheet" href="style.css">
+        <title>American Airlines x Morehouse College</title>
+    </head>
+    <body>
+        <nav class="navbar text-center">
+            <ul class="navbar-nav col-md-2">
+                <li class="nav-item">
+                    <a class="navbar-text" href="index.html">Home</a>
+                </li>
+            </ul>
+            <div class="col-md-8" style="line-height: 70px">
+                <img src="img/aa-logo.png" alt="" height="40px">
+            </div>
+        </nav>
+        <div class="container-fluid">
+            <div class="col-md-4 col-md-offset-1 col-xs-6 col-xs-offset-3">
+                <h2 class="text-center">Flight Info</h2>
+                <p>Based on how busy your airport is, we calculated that a time buffer of <b style="color: #800000"><span id="buffer_time"></span> hour(s)</b> between your arrival at the airport and your flight's departure in order to allow you plenty of time to get through bag check-in and TSA checkpoints.</p>
+                <ul class="list-group">
+                    <li class="list-group-item">Flight number: <span id="flight_num"></span></li>
+                    <li class="list-group-item">Departure airport: <span id="origin"></span></li>
+                    <li class="list-group-item">Arrival airport: <span id="destination"></span></li>
+                    <li class="list-group-item">Departure time: <span id="departure"></span></li>
+                    <li class="list-group-item">Suggested time to arrive at airport: <span id="suggested_arrival"></span></li>
+                </ul>
+            </div>
+            <div class="col-md-4 col-md-offset-1 col-xs-6 col-xs-offset-3 text-center">
+                <h2>Enter Your Travel Information</h2>
+                <p>This will let us calculate the time you should leave by to make your flight on time.</p>
+                <form action="itinerary.html" method="GET">
+                    <div class="form-group text-left">
+                        <input placeholder="Street Address" class="form-control fancy" type="text" name="address">
+                        <input placeholder="City" class="form-control fancy" type="text" name="city">
+                        <input placeholder="State" class="form-control fancy" type="text" name="state">
+                        <input placeholder="Zip Code" class="form-control fancy" type="text" name="zip">
+                        <input type="hidden" name="origin" id="hidden_origin">
+                        <input type="hidden" name="arrival_time" id="hidden_arrival">
+                    </div>
+                    <button class="btn btn-primary" type="submit">Submit</button>
+                </form>
+            </div>
+        </div>
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha256-3edrmyuQ0w65f8gfBsqowzjJe2iM6n0nKciPUp8y+7E=" crossorigin="anonymous"></script>
+        <script src="js/flightInfo.js"></script>
+    </body>
+</html>

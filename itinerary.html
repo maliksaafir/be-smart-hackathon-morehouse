@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+        <link rel="stylesheet" href="style.css">
+        <title>American Airlines x Morehouse College</title>
+    </head>
+    <body>
+        <nav class="navbar text-center">
+            <ul class="navbar-nav col-md-2">
+                <li class="nav-item">
+                    <a class="navbar-text" href="index.html">Home</a>
+                </li>
+            </ul>
+            <div class="col-md-8" style="line-height: 70px">
+                <img src="img/aa-logo.png" alt="" height="40px">
+            </div>
+        </nav>
+        <div class="container-fluid">
+            <div class="col-md-6 col-md-offset-3 text-center">
+                <!-- <h2>You Should Leave for the Airport At:</h2> -->
+                <p>It will take you <b style="color: #800000"><span id="travel_time"></span> minutes</b> to drive to your airport, so to arrive on time you should leave by: </p>
+                <span id="leave_time"></span>
+                <br>
+                <span>Powered by Google Maps</p>
+            </div>
+        </div>
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha256-3edrmyuQ0w65f8gfBsqowzjJe2iM6n0nKciPUp8y+7E="
+        crossorigin="anonymous"></script>
+        <script src="js/duration.js"></script>
+    </body>
+</html>
